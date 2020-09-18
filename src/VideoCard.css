@@ -1,0 +1,41 @@
+.videocard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 500px;
+    color: white;
+    transition: all 300ms ease-in-out ;
+    cursor: pointer;
+}
+
+
+.videocard:hover{
+transform: scale(1.06);
+}
+.videocard>h2{
+    margin-top: 10px;
+}
+
+.videocard>img{
+    height: 300px;
+    width:500px;
+    object-fit: contain;
+}
+p.videocard_stats{
+    display: none;
+}
+.videocard:hover >.videocard_stats{
+    display: inline-flex;
+}
+
+.videocard_stats{
+    display: flex;
+
+}
+.videocard_stats>.MuiSvgIcon-root{
+    font-size: 15px;
+    margin-left: 15px;
+    padding-top: 2px;
+}
